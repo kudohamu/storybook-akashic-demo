@@ -1,0 +1,58 @@
+{
+  "name": "@kudohamu/storybook-akashic-demo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Demo project for @kudohamu/storybook-akashic",
+  "keywords": [
+    "akashic-engine",
+    "storybook",
+    "storybook-akashic"
+  ],
+  "author": "kudohamu",
+  "license": "MIT",
+  "scripts": {
+    "build": "run-s clean type-check build:*",
+    "build:webpack": "webpack",
+    "build-storybook": "build-storybook -s ./game",
+    "clean": "rimraf ./game/script/bundle",
+    "clean-deploy": "rimraf ./storybook-static",
+    "deploy": "gh-pages -d storybook-static",
+    "predeploy": "run-s clean-deploy build-storybook",
+    "prepare": "husky install",
+    "start": "akashic-sandbox ./game",
+    "storybook": "start-storybook -p 6006 -s ./game",
+    "type-check": "tsc --noEmit --project tsconfig.json"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  },
+  "devDependencies": {
+    "@akashic/akashic-engine": "~3.1.2",
+    "@akashic/akashic-sandbox": "~0.17.35",
+    "@akashic/game-configuration": "^1.1.0",
+    "@babel/core": "^7.15.8",
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "@babel/plugin-proposal-private-methods": "^7.14.5",
+    "@babel/plugin-proposal-private-property-in-object": "^7.15.4",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/preset-typescript": "^7.15.0",
+    "@kudohamu/storybook-akashic": "^6.3.12-beta.0",
+    "@storybook/addon-essentials": "6.3.12",
+    "@types/node": "^16.11.6",
+    "babel-loader": "^8.2.3",
+    "cpx": "^1.5.0",
+    "gh-pages": "^3.2.3",
+    "husky": "^7.0.4",
+    "lint-staged": "^11.2.6",
+    "npm-run-all": "^4.1.5",
+    "prettier": "2.4.1",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^4.9.1"
+  },
+  "dependencies": {
+    "@akashic-extension/akashic-tile": "^3.0.1"
+  }
+}

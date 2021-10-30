@@ -1,0 +1,5 @@
+node_modules/
+*.zip
+game/script/*
+!game/script/boot.js
+storybook-static/
