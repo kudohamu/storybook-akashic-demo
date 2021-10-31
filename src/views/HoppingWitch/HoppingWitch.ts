@@ -1,5 +1,5 @@
 import { FONT_SIZE } from '../../constants/settings';
-import { GameCore } from '../../models/GameCoore';
+import { GameCore } from '../../models/GameCore';
 import { BackgroundSprite } from '../BackgroundSprite';
 import { GameFont } from '../GameFont';
 import { MapTile } from '../MapTile';
