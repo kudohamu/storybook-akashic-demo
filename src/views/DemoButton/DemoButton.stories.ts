@@ -1,5 +1,5 @@
 import { Story } from '@kudohamu/storybook-akashic';
-import { Button, ButtonParameter } from '.';
+import { DemoButton, DemoButtonParameter } from '.';
 
 export default {
   title: 'DemoButton/DemoButton',
@@ -8,8 +8,8 @@ export default {
   },
 };
 
-const Template: Story<ButtonParameter> = (params) => {
-  return new Button({
+const Template: Story<DemoButtonParameter> = (params) => {
+  return new DemoButton({
     width: 200,
     height: 56,
     ...params,

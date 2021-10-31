@@ -1,14 +1,14 @@
-export type ButtonParameter = g.EParameterObject & {
+export type DemoButtonParameter = g.EParameterObject & {
   disabled: boolean;
   onClick: () => void;
 };
 
-export class Button extends g.E {
+export class DemoButton extends g.E {
   private bg: g.FilledRect;
 
   private _disabled: boolean = false;
 
-  constructor({ disabled, onClick, ...params }: ButtonParameter) {
+  constructor({ disabled, onClick, ...params }: DemoButtonParameter) {
     super({
       ...params,
       touchable: true,
