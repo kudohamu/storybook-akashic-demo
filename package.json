@@ -36,7 +36,7 @@
     "@babel/plugin-proposal-private-property-in-object": "^7.15.4",
     "@babel/preset-env": "^7.15.8",
     "@babel/preset-typescript": "^7.15.0",
-    "@kudohamu/storybook-akashic": "^6.3.12-beta.0",
+    "@kudohamu/storybook-akashic": "^6.3.12-beta.1",
     "@storybook/addon-essentials": "6.3.12",
     "@types/node": "^16.11.6",
     "babel-loader": "^8.2.3",
