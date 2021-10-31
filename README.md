@@ -2,7 +2,7 @@
 
 これは [@kudohamu/storybook-akashic](https://github.com/kudohamu/storybook-akashic) のデモ用プロジェクトページです。
 
-![Screen Shot](https://github.com/kudohamu/storybook-akashic-demo/blob/main/assets/screenshot.png)
+![Screen Shot](https://github.com/kudohamu/storybook-akashic-demo/blob/main/assets/screenshot.gif)
 
 このプロジェクトでは[Akashic Engine](https://akashic-games.github.io/)で公開されている「[HOPPING WITCH](https://akashic-games.github.io/demo/?title=HoppingWitch)」というゲームを [Storybook ](https://storybook.js.org/) を使用する形で再実装しています。  
 プロジェクト内で使用している画像やマップデータなどのアセット類についても Akashic Engine から借用しています。
@@ -18,6 +18,13 @@ $ git clone https://github.com/kudohamu/storybook-akashic-demo.git
 $ npm i
 $ npm run build # 初回のみ必須
 $ npm run storybook
+```
+
+また@akashic/akashic-sandboxを立ち上げることも可能です。
+
+```
+$ npm run build
+$ npm start # open http://localhost:3000/game/
 ```
 
 ## ライセンス
