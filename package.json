@@ -28,6 +28,7 @@
   },
   "devDependencies": {
     "@akashic/akashic-engine": "~3.1.2",
+    "@akashic/akashic-engine-standalone": "^3.0.0",
     "@akashic/akashic-sandbox": "~0.17.35",
     "@akashic/game-configuration": "^1.1.0",
     "@babel/core": "^7.15.8",
@@ -36,7 +37,7 @@
     "@babel/plugin-proposal-private-property-in-object": "^7.15.4",
     "@babel/preset-env": "^7.15.8",
     "@babel/preset-typescript": "^7.15.0",
-    "@kudohamu/storybook-akashic": "^6.3.12-beta.1",
+    "@kudohamu/storybook-akashic": "^6.3.13",
     "@storybook/addon-essentials": "6.3.12",
     "@types/node": "^16.11.6",
     "babel-loader": "^8.2.3",

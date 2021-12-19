@@ -1,4 +1,4 @@
-import { GameConfiguration } from '@akashic/game-configuration';
+import { GameConfiguration } from '@akashic/akashic-engine-standalone';
 import { StorybookAkashicParameters } from '@kudohamu/storybook-akashic';
 import { assetIds } from '../src/constants/assets';
 const gameJson: GameConfiguration = require('../game/game.json');
