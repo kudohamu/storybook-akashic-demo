@@ -27,8 +27,6 @@ object-assign
  * Released under the MIT License.
  */
 
-/*! v1.0.0 */
-
 /** @license React v0.19.1
  * scheduler.production.min.js
  *
